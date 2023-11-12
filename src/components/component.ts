@@ -21,7 +21,7 @@ export class BaseComponent<T extends HTMLElement> implements Component {
 
   removeFrom(parent: HTMLElement) {
     if (parent !== this.element.parentElement) {
-      throw new Error("Parent Missmatch!");
+      throw new Error("Parent miss match!");
     }
     parent.removeChild(this.element);
   }
